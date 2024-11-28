@@ -10,7 +10,7 @@ const loginService = async (user, password) => {
 
   try {
     // Construir la ruta absoluta del archivo
-    const filePath = path.resolve(__dirname, '/users.json');
+    const filePath = path.resolve(__dirname, '../db/users/users.json');
         
     // Leer el archivo
     const data = await fs.readFile(filePath, 'utf8');
